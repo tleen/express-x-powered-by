@@ -1,5 +1,7 @@
 # Testing Express x-powered-by
 
+See strongloop/express#2865
+
 Trying to disable the x-powered-by header in express 5.
 
 Problem I am finding in creating sub-apps is that when disabling the 'x-powered-by' header in the
