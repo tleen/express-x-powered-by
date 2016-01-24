@@ -6,14 +6,18 @@ const express = require('express'),
 
 app.disable('x-powered-by');
 
+var r = new express.Router();
 
-
-app.get('/', (req, res, next) => {
+r.all('/', (req, res, next) => {
   return res.json({
     'now' : new Date
   });
 });
 
-app.use('/test', require('./routes/test'));
+var r2 = new express.Router();
+r2.use('/test', require('./routes/test'));
+
+app.use(r);
+app.use(r2);
 
 app.listen(PORT, () => { console.log(`app listening on ${PORT}`) });

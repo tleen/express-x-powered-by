@@ -6,9 +6,17 @@ const express = require('express'),
 // uncomment to disable the x-powered-by header
 // app.disable('x-powered-by');
 
-app.use('/', (req, res, next) => {
+app.all('/', (req, res, next) => {
   return res.json({
     'from': 'test',
+    'now': new Date
+  });
+});
+
+
+app.all('/alt', (req, res, next) => {
+  return res.json({
+    'from': 'test alt',
     'now': new Date
   });
 });
