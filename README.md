@@ -1,6 +1,6 @@
 # Testing Express x-powered-by
 
-See strongloop/express#2865
+See [strongloop/express#2865](https://github.com/strongloop/express/commit/fa8eec449bf406cebd7a92d376a098a39a804879)
 
 Trying to disable the x-powered-by header in express 5.
 
