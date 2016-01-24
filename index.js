@@ -6,10 +6,14 @@ const express = require('express'),
 
 app.disable('x-powered-by');
 
-app.use((req, res, next) => {
+
+
+app.get('/', (req, res, next) => {
   return res.json({
     'now' : new Date
   });
 });
+
+app.use('/test', require('./routes/test'));
 
 app.listen(PORT, () => { console.log(`app listening on ${PORT}`) });
