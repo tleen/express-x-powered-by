@@ -1,0 +1,22 @@
+{
+  "name": "express-x-powered-by",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tleen/express-x-powered-by.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tleen/express-x-powered-by/issues"
+  },
+  "homepage": "https://github.com/tleen/express-x-powered-by#readme",
+  "dependencies": {
+    "express": "5.0.0-alpha.2"
+  }
+}
