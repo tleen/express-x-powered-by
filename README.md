@@ -13,6 +13,6 @@ npm install
 node .
 ```
 
-(http://localhost:8080)[http://localhost:8080] - will disable the express header
+[http://localhost:8080](http://localhost:8080) - will disable the express header
 
-(http://localhost:8080/test)[http://localhost:8080/test] - will not disable the express header
+[http://localhost:8080/test](http://localhost:8080/test) - will not disable the express header
