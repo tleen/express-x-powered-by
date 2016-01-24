@@ -8,7 +8,7 @@ app.disable('x-powered-by');
 
 
 
-app.get('/', (req, res, next) => {
+app.all('/', (req, res, next) => {
   return res.json({
     'now' : new Date
   });
